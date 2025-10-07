@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ChillPillTech</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        .form-textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .info-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ChillPillTech</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <article class="blog-article">
+            <header class="article-header">
+                <h1>Contact ChillPillTech</h1>
+                <p>Get in touch with our aircon experts for all your servicing needs</p>
+            </header>
+            <div class="article-content">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Full Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="service">Service Required</label>
+                        <select id="service" class="form-input" required>
+                            <option value="">Select a service</option>
+                            <option value="servicing">Regular Servicing</option>
+                            <option value="chemical">Chemical Cleaning</option>
+                            <option value="repair">Repair</option>
+                            <option value="installation">Installation</option>
+                            <option value="consultation">Consultation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea id="message" class="form-textarea" placeholder="Describe your aircon issue or requirements..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>📍 Our Location</h3>
+                        <p>123 Cooling Road<br>#04-56<br>Singapore 123456</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>📞 Call Us</h3>
+                        <p>+65 6123 4567<br>Mon - Sun: 8:00 AM - 10:00 PM</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>✉️ Email Us</h3>
+                        <p>hello@chillpilltech.com<br>We reply within 2 hours</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>🕒 Emergency Service</h3>
+                        <p>24/7 Emergency Repairs<br>+65 9123 4567</p>
+                    </div>
+                </div>
+
+                <h2>Service Areas</h2>
+                <p>We provide aircon services across all regions of Singapore, including but not limited to: Central Area, East, West, North, and Northeast regions. Our mobile teams are strategically located to ensure quick response times throughout the island.</p>
+
+                <h2>What to Expect</h2>
+                <p>After you contact us, our customer service team will get in touch within 2 hours to understand your requirements and schedule an appointment. For emergency cases, we can typically dispatch a technician within the same day.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ChillPillTech</h3>
+                <p>Expert aircon servicing,
